@@ -1,3 +1,3 @@
 class Dog {
-    Object name
+    Object name // changing the type to String fixes it
 }

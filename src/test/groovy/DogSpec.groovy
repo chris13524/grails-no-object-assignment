@@ -18,8 +18,8 @@ class DogSpec extends Specification {
 
     void "test something"() {
 	Dog dog = new Dog(name:"sparky")
-        dog.name = "sparky"
+        // dog.name = "sparky" // adding this line also fixes it
         expect:"fix me"
-            (dog.name as String) == "sparky"
+            dog.name == "sparky"
     }
 }
